@@ -97,4 +97,3 @@ class GameInteractions #lightgreen {
   print_player(Player)
 }
 GameInteractions -- GameState
-1
