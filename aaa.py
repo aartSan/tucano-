@@ -1,4 +1,7 @@
 #черновик
+@startuml
+scale 2000*2000
+
 class Player #lightblue {
   name : str
   hand : Hand
@@ -98,3 +101,7 @@ class GameInteractions #lightgreen {
   print_player(Player)
 }
 GameInteractions -- GameState
+
+
+
+@enduml
