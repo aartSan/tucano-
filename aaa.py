@@ -1,3 +1,4 @@
+#черновик
 class Player #lightblue {
   name : str
   hand : Hand
