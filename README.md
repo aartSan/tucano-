@@ -21,38 +21,7 @@
 * *Ход*
 
 ---
-    Top: r2
-    Biba: y3 b4 r5 r6 
-    Biba play: r5
-    Boba: y7 b8 y9 
-    Boba: draw card 
-    Boba: y7 b8 y9 r7
-    Boba play: r7
-
-    Top: r7 
-    Biba: y3 b4 r6 
-    Biba play: r6
-
-    Top: r6 
-    Boba: y7 b8 y9 
-    Boba: draw card 
-    Boba: y7 b8 y9 y2 
-    Boba play: y2
-
-    Top: y2 
-    Biba: y3 b4 
-    Biba play: b4
-
-    Top: b4 
-    Boba: y7 y9 
-    Boba: draw card 
-    Boba: y7 y9 r3 
-    Boba play: r3
-
-    Top: r3 
-    Biba: y3 
-    Biba play: y3
-    Biba WIN!
+   
 
     ---
 
