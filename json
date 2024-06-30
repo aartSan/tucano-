@@ -1,0 +1,79 @@
+{
+    "players": [
+        {
+            "name": "first",
+            "hand": [
+                "Orange",
+                "Acai",
+                "Papaya",
+                "Carambola",
+                "Fig",
+                "Coconut",
+                "Coconut",
+                "Carambola",
+                "Acai",
+                "Pomegranate",
+                "Orange",
+                "Pineapple",
+                "Fig",
+                "Lychee",
+                "Orange",
+                "Rambutan",
+                "Avocado",
+                "Acai",
+                "Avocado",
+                "Coconut",
+                "Rambutan",
+                "Papaya",
+                "Rambutan",
+                "Coconut",
+                "Acai",
+                "Pomegranate",
+                "Orange",
+                "Banana",
+                "Carambola"
+            ]
+        },
+        {
+            "name": "second",
+            "hand": [
+                "Banana",
+                "Fig",
+                "Lime",
+                "Pomegranate",
+                "Banana",
+                "Avocado",
+                "Pomegranate",
+                "Pineapple",
+                "Acai",
+                "Fig",
+                "Lychee",
+                "Pomegranate",
+                "Rambutan",
+                "Banana",
+                "Coconut",
+                "Pineapple",
+                "Avocado",
+                "Acai",
+                "Papaya",
+                "Carambola",
+                "Avocado",
+                "Lime",
+                "Carambola",
+                "Pomegranate",
+                "Coconut",
+                "Banana",
+                "Rambutan"
+            ]
+        }
+    ],
+    "current_player": 0,
+    "rows": [
+        [
+            "Papaya"
+        ],
+        [],
+        []
+    ],
+    "deck": []
+}
