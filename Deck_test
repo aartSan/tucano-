@@ -1,0 +1,21 @@
+import unittest
+from probe import Deck
+from probeaction import Card
+
+class TestDeck(unittest.TestCase):
+
+    def(self):
+        self.deck = Deck()
+
+    def test_draw_card(self):
+        self.cards = [Card(), Card(), Card()]
+        card = self.deck.draw_card()
+ self.assertEqual(len(self.deck.cards), 2)
+
+    def test_shuffle(self):
+       _before = self.deck.cards[:]
+        self.deck.shuffle()
+        self.assertNotEqual(cards_before self.deck.cards)
+
+if __name__ == '__main__':
+    unittest.main()
