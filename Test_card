@@ -1,8 +1,0 @@
-#ЧЕРНОВИК
-import unittest
-
-def test_avocado():
-    assert (1, 3) == (1, 3), "Кортеж не равен самому себе"
-
-if __name__ == '__main__':
-    unittest.main()
