@@ -26,3 +26,8 @@ class Row:
 
     def save(self):
         return [c.save() for c in self.cards]
+
+    @classmethod
+    def load(cls, data: list):
+        cards = [Card.load(card) for card in data]
+        return Row(cards)

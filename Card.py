@@ -36,6 +36,10 @@ class Card:
     def save(self):
         return repr(self)
 
+    @classmethod
+    def load(cls, text: str):
+        return Card(text)
+
     @staticmethod
     def score(card: 'Card', count: int):
         card_name = card.kind
@@ -44,3 +48,4 @@ class Card:
         if card.kind in Card.CARD_MULTIPLIERS:
             return count * Card.CARD_MULTIPLIERS[card_name][0]
         return Card.CARD_SCORES[card_name][count - 1]
+

@@ -24,8 +24,13 @@ class Deck:
         random.shuffle(self.cards)
 
     def remaining_cards(self):
-        return self.cards.copy()
+        return len(self.cards)
 
     def save(self):
         return [c.save() for c in self.cards]
+
+    @classmethod
+    def load(cls, data: list):
+        cards = [Card.load(card) for card in data]
+        return Deck(cards)
 
