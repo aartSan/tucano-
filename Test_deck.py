@@ -16,5 +16,3 @@ def test_remaining_cards():
     assert deck.remaining_cards() == 4
 
 
-test_draw_card()
-test_remaining_cards()

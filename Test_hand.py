@@ -20,5 +20,4 @@ def test_add_cards():
                                   Card('Acai'), Card('Lychee')]))
 
 
-test_score()
-test_add_cards()
+

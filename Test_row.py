@@ -17,5 +17,3 @@ def test_add_card():
     assert str(row) == str(Row([Card('Acai'), Card('Acai'), Card('Acai'), Card('Lychee'), Card('Acai')]))
 
 
-test_take_cards()
-test_add_card()
