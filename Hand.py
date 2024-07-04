@@ -17,19 +17,25 @@ class Hand:
         for c in cards:
             self.cards.append(c)
 
-    def score(self):
+    def score(self, hands: list['Hand'] = None):
         card_counts = self.get_dictionary()
         s = 0
         for k, v in card_counts.items():
-            s += Card.score(k, v)
+            leader = False
+            if k in Card.CARD_MULTIPLIERS:
+                if hands is not None:
+                    counts = [list(map(str, hand.cards)).count(k) for hand in hands]
+                    leader = (max(counts) == v)
+            s += Card.score(Card(k), v, leader)
         return s
 
     def get_dictionary(self):
         card_counts = dict()
         for c in self.cards:
-            if c not in card_counts:
-                card_counts[c] = 0
-            card_counts[c] += 1
+            card = c.kind
+            if card not in card_counts:
+                card_counts[card] = 0
+            card_counts[card] += 1
         return card_counts
 
     def save(self):

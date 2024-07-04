@@ -33,4 +33,3 @@ class Deck:
     def load(cls, data: list):
         cards = [Card.load(card) for card in data]
         return Deck(cards)
-

@@ -41,11 +41,10 @@ class Card:
         return Card(text)
 
     @staticmethod
-    def score(card: 'Card', count: int):
+    def score(card: 'Card', count: int, leader=False):
         card_name = card.kind
         if count == 0:
             return 0
         if card.kind in Card.CARD_MULTIPLIERS:
-            return count * Card.CARD_MULTIPLIERS[card_name][0]
+            return count * Card.CARD_MULTIPLIERS[card_name][leader]
         return Card.CARD_SCORES[card_name][count - 1]
-

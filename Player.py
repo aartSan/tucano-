@@ -1,5 +1,3 @@
-# from AI import AI
-# from Human import Human
 from Row import Row
 from Hand import Hand
 
@@ -40,7 +38,7 @@ class Player:
 
 class Human:
     @staticmethod
-    def choose_row(self, player: Player, rows: list[Row], players: list[Player]):
+    def choose_row(player: Player, rows: list[Row], players: list[Player]):
         while True:
             row = input(f'{player.name}, выберите колоду (1 =< n =< 3): ')
             try:
@@ -56,12 +54,13 @@ class Human:
 
 class AI:
     @staticmethod
-    def choose_row(self, player: Player, rows: list[Row], players: list[Player]):
-        maxim_score = player.hand.score()
+    def choose_row(player: Player, rows: list[Row], players: list[Player]):
+        hands = [p.hand for p in players]
+        maxim_score = player.hand.score(hands)
         row = 0
         current_cards = player.hand.cards
         for i in range(len(rows)):
-            new_score = Hand(current_cards + rows[i].cards).score()
+            new_score = Hand(current_cards + rows[i].cards).score(hands)
             if new_score > maxim_score and rows[i].cards:
                 row = i
                 maxim_score = new_score
@@ -69,4 +68,3 @@ class AI:
         print(f'ИИ "{player.name}" выбирает {row + 1}-ю колоду')
         player.hand.add_cards(rows[row].take_cards())
         return row
-

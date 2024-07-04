@@ -46,15 +46,16 @@ class GameInteractions:
 
                 gs.save()
 
+        hands = [p.hand for p in gs.players]
         # Вывод очков у каждого игрока
         for p in gs.players:
-            print(f'Игрок {p} набрал - {p.hand.score()} очков')
+            print(f'Игрок {p} набрал - {p.hand.score(hands)} очков')
 
         max_score = 0
         winner = ''
         # Поиск игрока с наибольшим количеством очков
         for p in gs.players:
-            cur_score = p.hand.score()
+            cur_score = p.hand.score(hands)
             if cur_score > max_score:
                 winner = p
                 max_score = cur_score
